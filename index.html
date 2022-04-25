@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+  <link rel="stylesheet" href="./assets/lib/bootstrap.css">
 </head>
+
 <body>
   <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
@@ -18,14 +21,15 @@
       <ul class="layui-nav layui-layout-right">
         <li class="layui-nav-item layui-hide layui-show-md-inline-block">
           <a href="javascript:;">
-            <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
+            <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+              class="layui-nav-img">
             <div class="text-useravants">A</div>
             个人中心
           </a>
           <dl class="layui-nav-child">
-            <dd><a href="">基本资料</a></dd>
-            <dd><a href="">更换头像</a></dd>
-            <dd><a href="">重置密码</a></dd>
+            <dd><a href="./user/user_info.html" target="fm">基本资料</a></dd>
+            <dd><a href="./user/user_pwd.html" target="fm">重置密码</a></dd>
+            <dd><a href="./user/user_avatar.html" target="fm">更换头像</a></dd>
           </dl>
         </li>
         <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -35,18 +39,20 @@
         </li>
       </ul>
     </div>
-    
+
     <div class="layui-side layui-bg-black">
       <div class="layui-side-scroll">
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree " lay-shrink="all" lay-filter="test">
           <li class="layui-nav-item  useravants">
-            <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
+            <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+              class="layui-nav-img">
             <div class="text-useravants">A</div>
             <span class="welcome">欢迎xxx</span>
           </li>
 
-          <li class="layui-nav-item layui-this"><a href="./home/dashboard.html" target="fm"><i class="layui-icon layui-icon-home"></i> 首页</a></li>
+          <li class="layui-nav-item layui-this"><a href="./home/dashboard.html" target="fm"><i
+                class="layui-icon layui-icon-home"></i> 首页</a></li>
 
           <li class="layui-nav-item">
             <a class="" href="javascript:;"><i class="layui-icon layui-icon-template"></i>文章管理</a>
@@ -57,27 +63,27 @@
             </dl>
           </li>
           <li class="layui-nav-item">
-            
+
             <a href="javascript:;"><i class="layui-icon layui-icon-username"></i> 个人中心</a>
             <dl class="layui-nav-child">
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+              <dd><a href="./user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+              <dd><a href="./user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+              <dd><a href="./user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
             </dl>
           </li>
         </ul>
       </div>
     </div>
-    
+
     <div class="layui-body">
       <!-- 内容主体区域 -->
-      <iframe name="fm" src="./home/dashboard.html" frameborder="0" ></iframe>
+      <iframe name="fm" src="./home/dashboard.html" frameborder="0"></iframe>
     </div>
-    
+
     <div class="layui-footer">
       <!-- 底部固定区域 -->
       <span>
-      © www.itheima.com - 黑马程序员
+        © www.itheima.com - 黑马程序员
       </span>
     </div>
   </div>
@@ -86,5 +92,6 @@
   <script src="./assets/lib/jquery.js"></script>
   <script src="./assets/js/baseAPI.js"></script>
   <script src="./assets/js/index.js"></script>
-  </body>
+</body>
+
 </html>

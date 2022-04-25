@@ -26,7 +26,6 @@ function getUerSugget(){
         return layer.msg('获取失败')
       }
       renderAvatar(res.data)
-
     },
     // complete: function(res){
     //   // console.log(res);
@@ -40,14 +39,17 @@ function getUerSugget(){
 }
 
 function renderAvatar(data){
+  var name = data.nickname || data.username
+  $(".welcome").html('欢迎&nbsp;&nbsp;' + name)
+
   if(data.user_pic !== null){
-    $('.layui-nav-img').attr('src','res.data.user_pic').show()
+    $('.layui-nav-img').attr('src',data.user_pic).show()
     $('.text-useravants').hide()
-  }
-  $('.layui-nav-img').attr('src','res.data.user_pic').hide()
-    var name = data.username
-    $(".welcome").html('欢迎&nbsp;&nbsp;' + name)
+  }else{
+  $('.layui-nav-img').attr('src',data.user_pic).hide()
     var first = name[0].toUpperCase()
     $('.text-useravants').html(first).show()
+  }
+
 }
 
