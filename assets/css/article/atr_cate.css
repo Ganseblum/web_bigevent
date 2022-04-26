@@ -1,0 +1,17 @@
+.layui-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layui-card{
+  padding: 15px;
+}
+
+.layui-form{
+  margin-top: 20px;
+}
+
+.layui-input{
+  width: 300px !important;
+}
